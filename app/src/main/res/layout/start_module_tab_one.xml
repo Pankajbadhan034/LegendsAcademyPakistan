@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/adImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+<!--        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator-->
+<!--            android:id="@+id/spring_dots_indicator"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:dampingRatio="0.5"-->
+<!--            app:dotsColor="@color/white"-->
+<!--            app:dotsStrokeColor="@color/black"-->
+<!--            app:dotsSize="12dp"-->
+<!--            app:dotsSpacing="6dp"-->
+<!--            app:dotsStrokeWidth="1dp"-->
+<!--            app:stiffness="300"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_alignParentBottom="true"/>-->
+    </RelativeLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/adImage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--       -->
+<!--        android:layout_margin="5dp"-->
+<!--        android:scaleType="fitXY"/>-->
+
+</RelativeLayout>

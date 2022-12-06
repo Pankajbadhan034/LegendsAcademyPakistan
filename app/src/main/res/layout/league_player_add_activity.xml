@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".league.LeaguePlayerAddScreen">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="ADD PLAYER"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/playerNameTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/playerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Player Name*"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/squadTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/squadNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Squad Number"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nationalityTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Nationality"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/heightTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Height"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/weightTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Weight"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/schoolTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/schoolET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="School"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contactTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/contactET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Contact Number*"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/parentEmailTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/parentEmailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Contact Email*"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallfield"
+                android:drawableRight="@drawable/calendar"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Date of Birth"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/chooseClub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallfield"
+                android:drawableRight="@drawable/calendar"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="Choose Club"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/chooseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallfield"
+                android:drawableRight="@drawable/calendar"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="Choose League"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <GridView
+                android:id="@+id/selectedDatesGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:numColumns="2" />
+
+
+            <TextView
+                android:id="@+id/chooseSeason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallfield"
+                android:drawableRight="@drawable/calendar"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="Choose Season"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <GridView
+                android:id="@+id/selectedSeasonGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:numColumns="2" />
+
+            <TextView
+                android:id="@+id/chooseTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallfield"
+                android:drawableRight="@drawable/calendar"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="Choose Team*"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <GridView
+                android:id="@+id/selectedTeamGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:numColumns="2" />
+
+            <TextView
+                android:id="@+id/choosePosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallfield"
+                android:drawableRight="@drawable/calendar"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="Choose Position"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <GridView
+                android:id="@+id/selectedPositionGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:numColumns="2" />
+
+            <TextView
+                android:id="@+id/browse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/smallfield"
+                android:drawableRight="@drawable/attach"/>
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/placeholder"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Description"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:theme="@style/DarkLineTheme"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="18sp"-->
+<!--                android:text="Documents"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="10dp"/>-->
+
+
+            <com.lap..application.utils.NestedListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/addDocButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Documents"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

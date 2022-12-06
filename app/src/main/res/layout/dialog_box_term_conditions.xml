@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Term and Conditions"
+        android:textSize="17sp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+    <WebView
+        android:id="@+id/termText"
+        android:layout_below="@+id/titleDialog"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <!--    <ScrollView-->
+    <!--        android:layout_below="@+id/titleDialog"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginBottom="50dp">-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical">-->
+    <!--           -->
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/termText"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:gravity="center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text=""&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textSize="15sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginLeft="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginRight="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginBottom="10dp"/>&ndash;&gt;-->
+    <!--            -->
+    <!--        </LinearLayout>-->
+    <!--    </ScrollView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:background="@color/grey1"
+            android:text="CANCEL"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="I AGREE"/>
+    </LinearLayout>
+
+</RelativeLayout>

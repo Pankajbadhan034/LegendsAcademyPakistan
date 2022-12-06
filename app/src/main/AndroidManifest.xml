@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lap.application">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.USE_CREDENTIALS" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".child.ManageLeagueGroupScreen"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachMidweekUnpaidPlayersScreen"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".parent.LeagueManageCustomEditScreen"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentNotificationListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ZoomImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentOnlineShoppingHistorydetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".participant.ParticipantMainScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".league.LeaguePlayerEditScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".league.LeagueTeamEditScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".league.LeaguePlayerAddScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".league.LeagueTeamAddScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".league.LeagueManageLeagueScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".league.LeagueMainScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hitPay.HitPayExample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hitPay.HitPayExampleForJoinLeagueScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleContactUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleCovidWellnessViewReportScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleReportsTypeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.CoachBlankActivityForCreatePostNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleAnalysisDescriptionScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.CoachBlankActivityForCreatePost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleParentCovidReportsViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleCovidWellnessScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleDailyWellnessScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleTab4MonitorAndCovidQaScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleTab4AttendanceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleParentViewMarksScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleTab4ReportsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleTab4PicScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleTab4NewsFeedScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartOfferAndLegacyScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleResourceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleWebViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleContactUsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleTab4ScheduleScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleDashboardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startModule.StartModuleEnterEmailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachTeamDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeagueMatchResultScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachPlayerDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeagueViewAllStandingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachMatchResultDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeagueViewAllRankingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeagueViewAllGalleryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeagueViewAllResultScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeagueViewAllMatchesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeagueDetailOneScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentOnlineShoppingBillingShippingAddressScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentOnlineShoppingViewCartScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentOnlineShoppingProductDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentOnlineShoppingSubCatProductsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentOnlineShoppingParentchildProductTabsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookPitchSummaryNewForCalendarViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentCustomCalenderSlotViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookFacilityNewViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentMidWeekPackageAttendanceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentMidWeekPackageChildNamesAttendanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentViewMidweekAttendanceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachMidWeekPackageAttendanceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachMidWeekPackageChildNamesAttendanceActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RecycleViewExp" />
+        <activity
+            android:name=".parent.ParentBookedMidWeekHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookedMidWeekScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookMidWeekProceedScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookMidWeekChildrenListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentMidWeekDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentMidWeekListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachUnpaidPlayersScreen"
+            android:screenOrientation="portrait" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentMainScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="PARENT_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".child.ChildMainScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="CHILD_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".coach.CoachMainScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COACH_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- android:windowSoftInputMode="stateVisible|adjustPan" -->
+        <activity
+            android:name=".parent.ParentSignUpScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".parent.ParentForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity xmlns:tools="http://schemas.android.com/tools"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+        <activity
+            android:name=".parent.ParentChildDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentAddChildScreen"
+            android:screenOrientation="portrait" /> <!-- Using account jim@ifasport.com -->
+        <activity
+            android:name=".parent.ParentChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentUploadDocumentsScreen"
+            android:screenOrientation="portrait" /> <!-- Google Maps From Account jim@ifasport.com -->
+        <activity
+            android:name=".parent.ParentAcademyDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookAcademyOne"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookAcademyTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookAcademyThree"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookAcademyFour"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentCampDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookCampScreenOLD"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".parent.ParentCampBookingHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentLeagueDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentJoinLeagueScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentFacilityDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookAcademySummaryScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".parent.ParentBookAcademySummaryWithSingleDiscountScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".parent.ParentManageChallengesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentChallengeDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookedSessionHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookPitchScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentPreviewDocumentScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentCampMapScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentCampGalleryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachViewSessionDatesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachMoveChildScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachChildScoreDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentChildReportScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookPitchSummaryScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".coach.CoachSetChallengeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachViewChallengeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachAcceptedMembersScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachLeaderboardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachEditChallengeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyGalleryAddNewPhotoScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyGallerySingleImageScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyGalleryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyFriendRequestsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyFriendSendMessageScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyFriendProfileScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyFriendSendInviteScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyMessageDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMyMessagesReplyScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildManageChallengesDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildManageChallengesAchievedScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildPostViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildTrackWorkoutScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildTrackingMapViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildTrackingHistoryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildTrackingHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentPitchHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentAcademyGalleryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookedSessionsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookedPitchesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookedCampsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentRequestTrialScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentCreatePostScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachCreatePostScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentChildTimeline"
+            android:screenOrientation="portrait" /> <!-- FCM working from jim@ifasport.com account -->
+        <activity
+            android:name=".parent.ParentPaymentGatewayWebViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentStatusScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildAllCommentsReadScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildChooseMusicScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildChooseSubMusicScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildRecordVideoMergeMp3Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildCompleteRecordingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildVideoHistoryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentAcademyListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentFacilityListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentCampsListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildRecordVideoScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildVideoFilterScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildSuggestionUserProfileScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentViewAttendanceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentViewMarksScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentViewChildrenActivitiesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildCutAudioWaveScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachUploadDocumentsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.smartBand.ChildHomeSmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookCampScreenNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.smartBand.ChildSportSmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.smartBand.ChildHeartRateSmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.smartBand.ChildSportDetailSmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.smartBand.ChildSportSmartBandHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.smartBand.ChildHeartRateHistorySmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentChildActivityStatsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildRecordSlowFastvideoNewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildMessageDetailImageVideoViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildViewProfileGalleryImageViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentLeaderboardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentViewImageInFullScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentViewVideoInFullScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildChallengesLeaderBoardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentShowManageChildren"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookCampSummaryScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".coach.CoachMovedDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coach.CoachScoreDatesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentViewTermsAndConditionsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildBlankActivityForCreatePost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentAcademyListingWithFiltersScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookAcademyThreeFilter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookAcademyFourFilter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentNetPaymentZeroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.ParentBookPitchChooseGameScreen"
+            android:screenOrientation="portrait" />
+        <activity android:name=".coach.CoachRugbyScreen" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.wearable.standalone" -->
+        <!-- android:value="true" /> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfPvl28Cf3AIe0VVurwdca1hzxjrDRkok" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_notification_copy" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fcf936bf189539e922201029e8d0d5923f8ff837" />
+
+<!--        <provider-->
+<!--            android:name="com.facebook.FacebookContentProvider"-->
+<!--            android:authorities="com.facebook.app.FacebookContentProvider480552887371496"-->
+<!--            android:exported="true" />-->
+
+        <service
+            android:name=".child.ChildLocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="singleTask" /> <!-- <activity android:name=".child.ChildYouTubePlayerScreen" /> -->
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+<!--        <service android:name=".MyFirebaseInstanceIDService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+        <service
+            android:name=".child.smartBand.TimeService"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="COM.ACTION.TIMESERVICE" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

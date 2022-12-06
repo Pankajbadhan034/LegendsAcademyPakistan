@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/document1TI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/darkGrey"
+            android:layout_marginRight="50dp"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+            <EditText
+                android:id="@+id/document1ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Document Title"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:imeOptions="actionDone"
+                android:theme="@style/DarkLineTheme"/>
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="Document Title"-->
+<!--            android:textSize="15sp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/document1ET"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/darkBlue"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:inputType="text"-->
+<!--            android:textSize="15sp"/>-->
+
+        <ImageView
+            android:id="@+id/deleteIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/delete_cart" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/browseDoc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Photo"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:background="@drawable/smallfield"
+        android:drawableRight="@drawable/attach"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:visibility="visible"
+        android:src="@drawable/placeholder"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998213526205",
+    "project_id": "legendsacademypakistan",
+    "storage_bucket": "legendsacademypakistan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998213526205:android:91668c6713ffa5971ccdd4",
+        "android_client_info": {
+          "package_name": "com.lap.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998213526205-b3fsevrk8rhv8ea0sef6pnkk3m712d2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd59nx9-LfDL7ZoUx4UJPnS4Sjf8rIn4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998213526205-b3fsevrk8rhv8ea0sef6pnkk3m712d2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

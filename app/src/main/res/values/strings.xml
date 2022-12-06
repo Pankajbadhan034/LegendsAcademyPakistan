@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">LAP</string>
+    <string name="internet_not_available">Please check your internet connection and try again.</string>
+
+
+    <string name="blackWhite">Black&amp;White</string>
+
+    <!-- Using ifacognew@gmail.com Facebook account --> `
+    <string name="facebook_app_id">480552887371496</string>
+
+    <string name="text_bluetooth_off">Bluetooth is Off</string>
+    <string name="text_bluetooth_on">Bluetooth is On</string>
+
+    <string name="text_enable">Enable</string>
+    <string name="text_disable">Disable</string>
+
+    <string name="text_view_paired">Paired Devices</string>
+    <string name="text_scan_devices">Scan Devices</string>
+    <string name="text_stop_scan">Scan Devices</string>
+
+    <string name="text_list_paired_devices">Paired Devices</string>
+    <string name="text_list_devices">List of Devices</string>
+
+    <string name="text_pair">Pair</string>
+
+
+    <!--whitelabel texts-->
+    <string name="ifa">LAP</string>
+    <string name="select_ifa_member">Select LAP Member</string>
+    <string name="ifa_member_list_empty">LAP Member list empty</string>
+    <string name="ifa_dialog">LAP...</string>
+    <string name="this_is_a_non_ifa_invite">This is a Non LAP invite</string>
+    <string name="joined_ifa_sport">Joined LAP Sport</string>
+    <string name="ifa_session">LAP SESSIONS</string>
+    <string name="ifa_footbal_camp">LAP FOOTBALL CAMP</string>
+    <string name="ifa_career">LAP CAREER</string>
+    <string name="ifa_football_camp">LAP Football camp</string>
+    <string name="ifa_football_academy">LAP FOOTBALL ACADEMY</string>
+    <string name="share_with_ifa">Share with LAP</string>
+    <string name="ifaMember">LAP Member</string>
+    <string name="ifa_member_text">LAP MEMBER</string>
+    <string name="non_ifa_member">NON LAP MEMBERS</string>
+    <string name="title_activity_coach_rugby_screen">CoachRugbyScreen</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    // change manual entry in ParentManageChildrenFragment.java This icon will show you all of your
+    "+verbiage_plural.toLowerCase()+" history with IFA, their development, progress, performance,
+    challenges and achievements.
+
+
+    <!--    &lt;!&ndash;whitelable texts&ndash;&gt;-->
+    <!--    <string name="ifa">IFA</string>-->
+    <!--    <string name="select_ifa_member">Select IFA Member</string>-->
+    <!--    <string name="ifa_member_list_empty">JSA Member list empty</string>-->
+    <!--    <string name="ifa_dialog">JSA...</string>-->
+    <!--    <string name="this_is_a_non_ifa_invite">This is a Non IFA invite</string>-->
+    <!--    <string name="joined_ifa_sport">Joined IFA Sport</string>-->
+    <!--    <string name="ifa_session">IFA SESSIONS</string>-->
+    <!--    <string name="ifa_footbal_camp">IFA FOOTBALL CAMP</string>-->
+    <!--    <string name="ifa_career">IFA CAREER</string>-->
+    <!--    <string name="ifa_football_camp">IFA Football camp</string>-->
+    <!--    <string name="ifa_football_academy">IFA FOOTBALL ACADEMY</string>-->
+    <!--    <string name="share_with_ifa">Share with IFA</string>-->
+    <!--    <string name="ifaMember">IfaMember</string>-->
+    <!--    <string name="ifa_member_text">IFA MEMBER</string>-->
+    <!--    <string name="non_ifa_member">NON IFA MEMBERS</string>-->
+    <string name="icon_heart">&#xf004;</string>
+
+
+</resources>
